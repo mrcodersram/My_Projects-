@@ -1,0 +1,74 @@
+/* Header Styles */
+#site-header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+.header-logo img {
+    width: 100px;
+}
+
+.main-navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main-navigation li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.main-navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Content Styles */
+#main-content {
+    padding: 20px;
+}
+
+.intro {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+.intro-title {
+    font-size: 2rem;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+}
+
+.projects {
+    padding: 20px;
+}
+
+.projects-title {
+    font-size: 1.8rem;
+}
+
+.project-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.project-title {
+    font-size: 1.5rem;
+}
+
+.project-description {
+    font-size: 1rem;
+}
+
+/* Footer Styles */
+#site-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

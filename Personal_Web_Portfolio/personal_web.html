@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #333;
+            line-height: 1.6;
+        }
+        .header-container {
+            background-color: aqua;
+            border: 3px solid black;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .header-container .heading {
+            margin: 0;
+            font-size: 2rem;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            list-style: none;
+            padding: 10px 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: aqua;
+            background-color: rgb(125, 125, 39);
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+        }
+        main section {
+            margin-bottom: 40px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        footer a {
+            color: aqua;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-container">
+        <h1 class="heading">Welcome To My Personal Website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#Projects">Projects</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="About">
+            <h2>About</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+        </section>
+        <section id="Home">
+            <h2>Home</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit...</p>
+        </section>
+        <section id="Projects">
+            <h2>Projects</h2>
+            <p>Lorem200 ipsum dolor sit amet consectetur adipisicing elit...</p>
+        </section>
+    </main>
+    <footer>
+        <h2>Contact</h2>
+        <p><a href="https://google.com">Fill The Form To Contact Me</a></p>
+        <p>&copy; 2024 All Rights Reserved ~</p>
+    </footer>
+</body>
+</html>
