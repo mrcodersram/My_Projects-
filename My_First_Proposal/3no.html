@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Proposal</title>
+    <style>
+        .box1 {
+            display: flex;
+            font-weight: 800;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .box2 {
+            text-align: center;
+            padding: 20px;
+            font-weight: 900;
+            background-color: white;
+            box-shadow: 1px 1px 7px 6px #000;
+            border: 3px solid black;
+            border-radius: 8px;
+            position: relative; /* Ensures the buttons move within this container */
+        }
+        .box2 p {
+            color: blue;
+        }
+        .box2 a {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            border: 1px solid black;
+            box-shadow: 1px 1px 8px 6px black;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            position: absolute; /* Allows movement of the "No" button */
+        }
+        .yes {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            left: 50%; /* Center the "Yes" button */
+            transform: translateX(-50%);
+        }
+        .no {
+            background-color: #f44336; /* Red */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2">
+            <h2>Baby Man Jao Na! Aur Kitna Sataoge 😭</h2>
+            <p>Bahut Galat Baat Hei Yaar 😢</p>
+
+            <a href="yes.html" class="yes">Yes</a>
+            <a href="#" class="no" id="noButton">No</a>
+        </div>
+    </div>
+
+    <script>
+        const noButton = document.getElementById('noButton');
+
+        noButton.addEventListener('mouseover', function() {
+            // Get random positions for the "No" button within the box2 container
+            const box2 = document.querySelector('.box2');
+            const box2Rect = box2.getBoundingClientRect();
+
+            // Calculate the random position
+            const newTop = Math.random() * (box2Rect.height - noButton.offsetHeight);
+            const newLeft = Math.random() * (box2Rect.width - noButton.offsetWidth);
+
+            // Set the new position
+            noButton.style.top = newTop + 'px';
+            noButton.style.left = newLeft + 'px';
+        });
+    </script>
+</body>
+</html>
